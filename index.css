@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    background-color: silver;
+}
+.navbar_container {
+    padding-top: 2vh;
+    height: 9vh;
+    width: 100%;
+    background-color: #9A031E;
+}
+.navbar_logo_container {
+    margin-left: 3vh;
+    height: 10vh;
+    width: 35vw;
+}
+#navbar_img {
+    width: 40px
+}
