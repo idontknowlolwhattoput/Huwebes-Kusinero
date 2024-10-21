@@ -22,11 +22,24 @@ body {
 }
 .navbar_right_box {
     background-color: aliceblue;
+    display: inline-flexbox;
+    margin-top: -1vh;
     margin-right: 3vh;
     height: 7vh;
-    width: 50vw;
+    width: 60vw;
 }
-
+.navbar_right_box li {
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    margin-left: 70px;
+    font-size: 30px;
+    list-style-type: none;
+    display: inline;
+}
+#more {
+    background-color: aqua;
+    width: 10vh;
+}
 #chefshat {
     width: 35vh
 }
@@ -42,5 +55,13 @@ body {
     }
     #chefshat {
         height: 50px
+    }
+    .navbar_right_box li {
+       display: none;
+     }
+     .navbar_container {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        height: 9vh;
     }
 }
