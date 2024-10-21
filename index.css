@@ -7,7 +7,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding-top: 2vh;
-    padding-bottom: 1vh;
+    padding-bottom: 2vh;
     height: 9vh;
     width: 100%;
     background-color: #9A031E;
@@ -16,33 +16,31 @@ body {
     display: flex;  
     align-items: center;
     justify-content: space-between;
-    margin-left: 3vh;
+    margin-left: 10vh;
     height: 7vh;
     width: 20vw;
 }
 .navbar_right_box {
+    background-color: aliceblue;
     margin-right: 3vh;
     height: 7vh;
     width: 50vw;
 }
-#navbar_img {
-    width: 40px
-}
+
 #chefshat {
-    width: 10vh
+    width: 35vh
 }
-#navbar_logo_text{
-    margin-top: -1vh;
-    width: 30px;
-}
-#navbar_logo_text p{
-    font-size: 3vh
-}
+
 
 
 @media only screen and (max-width: 440px) {
     .navbar_right_box {
-        width: 25vh;
-        background-color: aliceblue;
+        width: 10vh;
+    }
+    .navbar_logo_container {
+        margin-left: 3  vh;
+    }
+    #chefshat {
+        height: 50px
     }
 }
