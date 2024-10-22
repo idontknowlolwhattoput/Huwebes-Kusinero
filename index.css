@@ -21,12 +21,12 @@ body {
     width: 20vw;
 }
 .navbar_right_box {
-    background-color: aliceblue;
-    display: inline-flexbox;
+    display: flex;
     margin-top: -1vh;
     margin-right: 3vh;
     height: 7vh;
-    width: 60vw;
+    width: 55vw;
+    justify-content: flex-end;
 }
 .navbar_right_box li {
     font-weight: 500;
@@ -37,11 +37,18 @@ body {
     display: inline;
 }
 #more {
-    background-color: aqua;
-    width: 10vh;
+    width: 8vh;
 }
 #chefshat {
     width: 35vh
+}
+
+#list {
+   margin-top: -.5vh;
+}
+#icon {
+    margin-left: 5vh;
+   
 }
 
 
