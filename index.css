@@ -1,8 +1,11 @@
 body {
     margin: 0;
+    height: 1000px;
     background-color: silver;
 }
 .navbar_container {
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,21 +25,25 @@ body {
 }
 .navbar_right_box {
     display: flex;
-    margin-top: -1vh;
+    margin-top: -.5vh;
     margin-right: 3vh;
     height: 7vh;
     width: 55vw;
     justify-content: flex-end;
 }
 .navbar_right_box li {
-    font-weight: 500;
+    display: inline-block; /* Make the list item inline-block for scaling */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+    color: whitesmoke;
+    font-weight: 600;
     font-family: "Inter", sans-serif;
     margin-left: 70px;
-    font-size: 30px;
+    font-size: 23px;
     list-style-type: none;
-    display: inline;
 }
 #more {
+    display: inline-block; /* Make the list item inline-block for scaling */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
     width: 8vh;
 }
 #chefshat {
@@ -46,11 +53,18 @@ body {
 #list {
    margin-top: -.5vh;
 }
+#more:hover {
+    color: #F2921D;
+    transform: scale(1.2); /* Increase the size by 20% */
+}
 #icon {
     margin-left: 5vh;
    
 }
-
+.navbar_right_box li:hover {
+    color: #F2921D;
+    transform: scale(1.2); /* Increase the size by 20% */
+}
 
 
 @media (max-width: 440px) {
@@ -70,5 +84,8 @@ body {
         padding-top: 1vh;
         padding-bottom: 1vh;
         height: 9vh;
+    }
+    #more {
+        width: 7vh;
     }
 }
