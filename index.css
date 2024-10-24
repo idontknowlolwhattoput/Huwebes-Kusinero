@@ -16,6 +16,7 @@ body {
     background-color: #9A031E;
 }
 .navbar_logo_container { 
+    filter: drop-shadow(1px 1px 1px gray);
     display: flex;  
     align-items: center;
     justify-content: space-between;
@@ -37,21 +38,25 @@ body {
     color: whitesmoke;
     font-weight: 600;
     font-family: "Inter", sans-serif;
-    margin-left: 70px;
+    margin-left: 60px;
     font-size: 23px;
     list-style-type: none;
 }
+
 #more {
     display: inline-block; /* Make the list item inline-block for scaling */
     transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
     width: 8vh;
 }
 #chefshat {
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
     width: 35vh
 }
-
 #list {
-   margin-top: -.5vh;
+    color: whitesmoke;
+    text-shadow: 1px 2px 5px black;
+    letter-spacing: 1.5px;
+    margin-top: -.5vh;
 }
 #more:hover {
     color: #F2921D;
@@ -63,8 +68,49 @@ body {
 }
 .navbar_right_box li:hover {
     color: #F2921D;
-    transform: scale(1.2); /* Increase the size by 20% */
+    transform: scale(1.2);
 }
+#menu_dropdown{
+    position: relative; 
+}
+ 
+.dropdown_menu_content {
+    text-shadow: none;
+    height: 100px;
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    width: 120px; 
+    top: 100%;
+    left: 0;
+    z-index: 1000; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .5); /* Optional: add shadow for better visibility */
+}
+#menu_dropdown:hover .dropdown_menu_content {
+    display: block; /* Show dropdown on hover */
+}
+#loc_dropdown {
+    position: relative; /* Set relative positioning for the dropdown */
+}
+ 
+.dropdown_loc_content {
+    text-shadow: none;
+    height: 100px;
+    display: none;
+    position: absolute; /* Position the dropdown */
+    background-color: aliceblue;
+    width: 120px; /* Set width of dropdown */
+    top: 100%; /* Position below the menu */
+    left: 0;
+    z-index: 1000; /* Ensure it appears above other content */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visibility */
+}
+
+#loc_dropdown:hover .dropdown_loc_content {
+    display: block; /* Show dropdown on hover */
+}
+
+
 
 
 @media (max-width: 440px) {
